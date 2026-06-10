@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1>Zomato Food Order Form</h1>
+
+    <form>
+        
+        <!-- Order ID is disabled so users cannot modify the system-generated order number -->
+         <label>Order ID:</label><br>
+        <input type="text"  value="ORD12345" disabled>
+        <br><br>
+
+        
+        <label>User Name:</label><br>
+        <input type="text"  required>
+        <br><br>
+
+        
+        <label>Select Food Item:</label><br>
+        <select required>
+            <option value="">--Choose Food--</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Burger">Burger</option>
+            <option value="Pasta">Pasta</option>
+        </select>
+        <br><br>
+
+        
+        <label>Quantity:</label><br>
+        <input type="number"  min="1" required>
+        <br><br>
+
+        
+        <label>Delivery Instructions:</label><br>
+        <textarea  rows="4" cols="30" required></textarea>
+        <br><br>
+
+        
+        <button type="submit">Place Order</button>
+        </form>
+
+</body>
+</html>

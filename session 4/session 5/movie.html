@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookMyShow Movie Page</title>
+
+<style>
+    /* Light Theme (Default) */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #222;
+        margin: 0;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .movie-card {
+        max-width: 700px;
+        margin: auto;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #f5f5f5;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        color: #e63946;
+    }
+
+    .toggle-btn {
+        padding: 10px 20px;
+        border: none;
+        background-color: #e63946;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    /* Dark Theme */
+    .dark-mode {
+        background-color: #121212;
+        color: #ffffff;
+    }
+
+    .dark-mode .movie-card {
+        background-color: #1f1f1f;
+        box-shadow: 0 0 10px rgba(255,255,255,0.1);
+    }
+
+    .dark-mode h1 {
+        color: #ff6b6b;
+    }
+</style>
+</head>
+
+<body>
+
+<button class="toggle-btn" onclick="toggleMode()">
+    Toggle Light/Dark Mode
+</button>
+
+<div class="movie-card">
+    <h1>Avengers: Endgame</h1>
+    <p><strong>Genre:</strong> Action, Adventure, Sci-Fi</p>
+    <p><strong>Duration:</strong> 3h 1m</p>
+    <p><strong>Rating:</strong> 8.4/10</p>
+
+    <h3>Synopsis</h3>
+    <p>
+        After the devastating events of Infinity War, the Avengers
+        assemble once more to reverse Thanos' actions and restore balance
+        to the universe.
+    </p>
+</div>
+
+<script>
+    function toggleMode() {
+        document.body.classList.toggle("dark-mode");
+    }
+</script>
+
+</body>
+</html>

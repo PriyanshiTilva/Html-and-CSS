@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Product Tile</title>
+
+    <style>
+        /* Product Tile */
+        .product-tile {
+            width: 220px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Product Image */
+        .product-image {
+            display: block;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 10px;
+        }
+
+        /* Product Name */
+        .product-name {
+            display: block;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* Product Price */
+        .price {
+            display: inline-block;
+            background-color: #f1f1f1;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Hide Price */
+        .hide-price {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="product-tile">
+
+        <img src="data:image/webp;base64,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"
+             alt="Product Image"
+             class="product-image">
+
+        <span class="product-name">
+            Wireless Headphones
+        </span>
+
+        <span class="price">
+            ₹1,999
+        </span>
+
+    </div>
+
+    
+
+</body>
+</html>

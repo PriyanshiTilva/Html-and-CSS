@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Notification Badge</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        height: 2000px; /* Extra height for scrolling */
+        margin: 0;
+        padding: 20px;
+    }
+
+    /* WhatsApp Chat Button */
+    .whatsapp-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+        background-color: #25D366;
+        color: white;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 60px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* Notification Badge */
+    .badge {
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        background-color: red;
+        color: white;
+        padding: 4px 8px;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+
+<h2>Scroll Down the Page</h2>
+<p>The WhatsApp notification badge stays fixed at the bottom-right corner.</p>
+
+<div class="whatsapp-btn">
+    💬
+    <span class="badge">5</span>
+</div>
+
+</body>
+</html>

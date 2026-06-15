@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spotify Playlist Bar</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #121212;
+        margin: 20px;
+    }
+
+    /* Playlist Container */
+    .playlist-bar {
+        display: flex;
+        gap: 15px;
+    }
+
+    /* Song Card */
+    .song-card {
+        display: flex;
+        align-items: center; /* Vertically centers text */
+        width: 180px;
+        height: 80px;
+        background-color: #1DB954;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .song-info h4 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .song-info p {
+        margin: 4px 0 0;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+
+<h2 style="color:white;">Spotify Playlist</h2>
+
+<div class="playlist-bar">
+
+    <div class="song-card">
+        <div class="song-info">
+            <h4>Shape of You</h4>
+            <p>Ed Sheeran</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div class="song-info">
+            <h4>Blinding Lights</h4>
+            <p>The Weeknd</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div class="song-info">
+            <h4>Perfect</h4>
+            <p>Ed Sheeran</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div class="song-info">
+            <h4>Levitating</h4>
+            <p>Dua Lipa</p>
+        </div>
+    </div>
+
+    <div class="song-card">
+        <div class="song-info">
+            <h4>Believer</h4>
+            <p>Imagine Dragons</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
